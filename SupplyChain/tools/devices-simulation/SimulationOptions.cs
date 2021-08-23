@@ -13,6 +13,7 @@ namespace devices_simulation
     public int SupplierDevices { get; set; }
     public int TruckShipmentDevices { get; set; }
     public int WareHouseDevices { get; set; }
+    public int WindTurbineDevices { get; set; }
 
     public static SimulationOptions GetDefault()
     {
@@ -27,7 +28,8 @@ namespace devices_simulation
         StoreRoomDevices = 20,
         SupplierDevices = 8,
         TruckShipmentDevices = 26,
-        WareHouseDevices = 8
+        WareHouseDevices = 8,
+        WindTurbineDevices = 10
       };
     }
   }

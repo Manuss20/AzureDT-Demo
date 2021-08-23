@@ -111,5 +111,16 @@ namespace devices_simulation
         new DeviceProperty() { Name = "StockLevel", Min = 20, Max = 40 }
       }
     };
+    public static readonly DeviceModel WindTurbineModel = new DeviceModel()
+    {
+      BaseName = "V164-8.0MW",
+      InitialIdReference = 140,
+      Properties = new List<DeviceProperty>
+      {
+        new DeviceProperty() { Name = "Energy", Min = 200, Max = 340 },
+        new DeviceProperty() { Name = "TBA", Min = 70, Max = 94 },
+        new DeviceProperty() { Name = "EBA", Min = 50, Max = 84 }
+      }
+    };
   }
 }

@@ -94,6 +94,13 @@ namespace devices_simulation
           Model = Constants.WareHouseModel
         });
       }
+      for (var i = 0; i < options.WindTurbineDevices; i++)
+      {
+        devices.Add(new SimulatedDevice() {
+          DeviceId = $"{Constants.WindTurbineModel.BaseName}{(Constants.WindTurbineModel.InitialIdReference + i)}",
+          Model = Constants.WindTurbineModel
+        });
+      }
       _simulation = new Simulation()
       {
         Devices = devices,
